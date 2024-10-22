@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+    /* height: 200vh;
+    background-color: deeppink; */
+}
+/* font size */
+.font-size-1rem {
+    font-size: 1.2rem;
+}
+.font-size-small {
+    font-size: .8rem;
+}
+/* header */
+/* size logo brand */
+.logo-brand{
+    width: 200px;
+}
+.logo-brand img {
+    width: 100%;
+}
+/* size logo flag */
+.logo-flag {
+    width: 3.5rem;
+    height: 2.5rem;
+}
+.logo-flag img {
+    width: 100%;
+    height: 100%;
+}
+/* size logo nav */
+.logo-nav {
+    height: 2rem;
+}
+.logo-nav img {
+    height: 100%;
+}
+/* hover navigation */
+.drop-down,.nav-none {
+    display: none;
+}
+.nav-item:hover .drop-down {
+    display: block;
+}
+/* class border-buttom */
+.buttom-border {
+    border-bottom: 1px solid white;
+}
+/* class border-right */
+.right-border {
+    border-right: 1px solid white;
+}
+/* style top position navigation */
+.top-dorp-down {
+    top: 4rem;
+}
+/* style top position toggle search */
+.toggle-dorp-down {
+    top: 3rem;
+    left: 53rem;
+}
+/* width navigation */
+.nav-width {
+    width: 65vw;
+}
+.col-nav-width {
+    width: 12.7vw;
+}
+.toggle-width {
+ width: 22.7rem;
+}
+/* end of header  */
+
+/* carousel */
+.container-carousel {
+    /* main class */
+    position: absolute;
+    top: 0;
+}
+.carousel-img{
+    width: 100vw;
+    height: 70vh;
+}
+.carousel-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-style {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: gainsboro;
+}
+.btn-style:hover {
+    background-color: dodgerblue;
+}
+.carousel-text-style-left {
+    margin-bottom: 320px;
+}
+.carousel-text-style-right {
+    margin-bottom: 300px;
+}
+.carousel-text1{
+    font-size: 15px;
+}
+.carousel-text2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+/* end carousel */
+/* class section  */
+.section-middle{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.section-middle-padding {
+    padding: 30px 0;
+}
+.section-middle-style {
+    width: 280px;
+    padding: 25px;
+    --c: #004898; /* the border color */
+    --b: 1px;    /* the border thickness*/
+    --g: 25px;     /* the gap on hover */
+    
+    padding: calc(var(--g) + var(--b));
+    --_g: #0000 25%,var(--c) 0;
+    background: 
+      conic-gradient(from 180deg at top var(--b) right var(--b),var(--_g))
+       var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+      conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+       0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+    transition: .3s, background-position .3s .3s;
+    cursor: pointer;
+}
+.section-middle-style-text {
+    color: #5787f0;
+    padding-left: 10px;
+}
+.section-middle-style:hover {
+    /* border: 1px solid #5787f0; */
+    --_i: 100%;
+    transition: .3s, background-size .3s .3s;
+}
+
+/* end of class section middle  */
+
+/* class section middle 2 */
+.section-middle2{
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+    cursor: pointer;
+
+}
+.section-middle2 .card {
+    margin: 10px 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background-color: white;
+    color: #004898;
+}
+.section-middle2-icon-style {
+    color: gray;
+}
+.section-middle2-icon-style:hover {
+    color: #004898;
+}
+.card-body:hover {
+    background-color: #004898;
+    color: white;
+}
+/* end class section middle 2 */
+@media screen and (max-width: 768px) {
+    /* main class header responsvie */
+    .container-header {
+        border-bottom: none;
+        position: inherit;
+    }
+    /* class navigation del mean with 65vw */
+    .nav-width {
+        width: 100%;
+    }
+    /* navbar-brand class bootstrap 5 */
+    .navbar-brand {
+        margin-left: 1rem;        
+    }
+    /* class width logo in navbar-toggle */
+    .logo-brand {
+        width: 10rem;
+    }
+    /* class flag cambodia */
+    .logo-flag {
+        width: 2rem;
+        height: 1.2rem;
+    } 
+    /* class bootstrap ធ្វើអោយមានកំលាតនៅក្នុងកន្លែងពេលយើង click navbar-toggle */
+    .nav-item {
+        padding: .5rem 0;
+    }
+    /* class hover change color  */
+    .nav-link:hover {
+        color: blue;
+    }
+
+    .nav-width .col-2 {
+        width: 50%;
+    }
+    .col-2 .nav-link {
+        font-size: 10px;
+    }
+    .toggle-dorp-down {
+        top: 4rem;
+        left: .8rem;
+    }
+    /* end of header responsive */
+    /* class silde done */
+    .container-carousel {
+        position: inherit;
+        top: 0;
+        width: 100%;
+    }
+    .carousel-img {
+        height: 30%;
+    }
+    /* end of class slide */
+    .section-middle2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+    }
+    .middle-section2-icon {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
